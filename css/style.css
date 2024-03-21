@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --Dark-Grey: hsl(0, 0%, 12%);
+    --Off-Black: hsl(0, 0%, 8%);
+    --Green: hsl(75, 94%, 57%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--Off-Black);
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Inter", sans-serif;
+}
+
+#main {
+    width: 355px;
+    max-height: 555px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.social-links-profile {
+    padding: 32px;
+    /* background-color: var(--Dark-Grey); */
+    background-color: grey;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+
+.social-links-profile__info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.info-img {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-image: url("../img/avatar-jessica.jpeg");
+    background-size: contain;
+    width: 28%;
+    padding-top: 28%;
+}
+
+.info-name {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.info-place {
+    font-weight: 600;
+    color: var(--Green);
+    margin-bottom: 20px;
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+.info-desc {
+    font-weight: 400;
+    color: #fff;
+    font-size: 12px;
+}
+
+.social-links-profile__btn {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    font-weight: 600;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: var(--Grey);
+    padding: 16px 32px;
+    margin-top: 15px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 375px) {
+    #main {
+        width: 70%;
+    }
+}
